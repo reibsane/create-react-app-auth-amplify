@@ -24,13 +24,47 @@ function Chart() {
             <h1>Chart 2</h1>
     <Bar data={data} />
   </div>
-  <label for="title">Title:</label><br></br>
-  <input type="text" id="title" name="title" value="Food"></input><br></br>
-  <label for="amount">Amount:</label><br></br>
-  <input type="text" id="amount" name="amount" value="0"></input><br></br>
-  <label for="color">Color:</label><br></br>
-  <input type="text" id="color" name="color" value="blue"></input><br></br>
-  <input type="submit" value="Submit"></input>
+   Item:
+<input type="text" name="item" id="item" />
+<br />Quantity:
+<input type="text" name="quantity" id="quantity" />
+<br />Price: AUD
+<input type="text" name="price" id="price" />
+<br /><br />
+<input type="button" value="Add Product +" onClick="addRow()" id="add">
+<br /><br />
+<table id="table" border="1">
+<thead id="table-head">
+<tr>
+    <th>Item</th>
+    <th>Quantity</th>
+    <th>Price</th>
+</tr>
+</thead>
+<tbody id="table-body">
+</tbody>
+</table>
+<script>
+function addRow() {
+"use strict";
+
+var tableBody = document.getElementById("table-body");
+var td1 = document.createElement("td");
+var td2 = document.createElement("td");
+var td3 = document.createElement("td");    
+var row = document.createElement("tr");
+
+td1.innerHTML = document.getElementById("item").value;
+td2.innerHTML  = document.getElementById("quantity").value;
+td3.innerHTML  = document.getElementById("price").value;
+
+row.appendChild(td1);
+row.appendChild(td2);
+row.appendChild(td3);
+
+tableBody.appendChild(row);
+}
+</script>
   </div>
     );
   }
