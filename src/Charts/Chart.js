@@ -21,7 +21,7 @@ function Chart() {
     return (
         <div className='center'>
             <div class='chrt'>
-            <h1>Chart 2</h1>
+            <h1>Chart 1</h1>
     <Pie data={data} />
   </div>
   <label for="title">Title:</label><br></br>
