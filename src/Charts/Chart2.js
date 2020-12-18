@@ -15,7 +15,25 @@ const data = {
   ]
 };
 
+function addRow() {
+"use strict";
 
+var tableBody = document.getElementById("table-body");
+var td1 = document.createElement("td");
+var td2 = document.createElement("td");
+var td3 = document.createElement("td");    
+var row = document.createElement("tr");
+
+td1.innerHTML = document.getElementById("item").value;
+td2.innerHTML  = document.getElementById("quantity").value;
+td3.innerHTML  = document.getElementById("price").value;
+
+row.appendChild(td1);
+row.appendChild(td2);
+row.appendChild(td3);
+
+tableBody.appendChild(row);
+}
 
 function Chart() {
     return (
@@ -44,27 +62,6 @@ function Chart() {
 <tbody id="table-body">
 </tbody>
 </table>
-<script>
-function addRow() {
-"use strict";
-
-var tableBody = document.getElementById("table-body");
-var td1 = document.createElement("td");
-var td2 = document.createElement("td");
-var td3 = document.createElement("td");    
-var row = document.createElement("tr");
-
-td1.innerHTML = document.getElementById("item").value;
-td2.innerHTML  = document.getElementById("quantity").value;
-td3.innerHTML  = document.getElementById("price").value;
-
-row.appendChild(td1);
-row.appendChild(td2);
-row.appendChild(td3);
-
-tableBody.appendChild(row);
-}
-</script>
   </div>
     );
   }
