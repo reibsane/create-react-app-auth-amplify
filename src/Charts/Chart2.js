@@ -49,7 +49,7 @@ function Chart() {
 <br />Price: AUD
 <input type="text" name="price" id="price" />
 <br /><br />
-<input type="button" value="Add Product +" onClick="addRow()" id="add">
+<input type="button" value="Add Product +" onClick="addRow()" id="add"></input>
 <br /><br />
 <table id="table" border="1">
 <thead id="table-head">
@@ -62,10 +62,8 @@ function Chart() {
 <tbody id="table-body">
 </tbody>
 </table>
-  </div>
+</div>
     );
   }
 
   export default Chart;
-
-
