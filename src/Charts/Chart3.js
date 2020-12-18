@@ -22,7 +22,7 @@ function Chart() {
         <div className='center'>
             <div class='chrt'>
             <h1>Chart 2</h1>
-    <Pie data={data} />
+    <Line data={data} />
   </div>
   <label for="title">Title:</label><br></br>
   <input type="text" id="title" name="title" value="Food"></input><br></br>
