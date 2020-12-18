@@ -1,0 +1,5 @@
+{
+    "tableName": "chartData",
+    "partitionKeyName": "title",
+    "partitionKeyType": "S"
+}
