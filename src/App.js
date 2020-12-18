@@ -17,9 +17,6 @@ import Menu from './Menu/Menu';
 import Hero from './Hero/Hero';
 import HomePage from './HomePage/HomePage';
 import Footer from './Footer/Footer';
-import LoginPage from './LoginPage/LoginPage';
-import Logout from './Logout/Logout';
-import Signup from './Signup/Signup';
 import Dashboard from './Dashboard/Dashboard';
 import Chart from './Charts/Chart';
 import Chart2 from './Charts/Chart2';
@@ -33,19 +30,6 @@ class App extends Component {
       <Hero/>
       <div className="mainContainer">
         <Switch>
-
-          <Route path="/login">
-            <LoginPage/>
-          </Route>
-
-          <Route path="/logout">
-            <Logout/>
-          </Route>
-
-          <Route path="/signup">
-            <Signup/>
-          </Route>
-
           <Route path="/dashboard">
             <Dashboard/>
             <Chart/>
