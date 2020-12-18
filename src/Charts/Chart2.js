@@ -1,9 +1,10 @@
 import React from 'react';
-import { Bar } from 'react-chartjs-2';
+import { Bar } from "react-chartjs-2";
+
 
 const data = {
     title: {
-        text: "Chart"
+        text: "Chart 1"
     },
   labels: ["Rent", "Eat Out", "Grocery"],
   datasets: [
@@ -15,25 +16,27 @@ const data = {
   ]
 };
 
-function addRow() {
-"use strict";
 
-var tableBody = document.getElementById("table-body");
-var td1 = document.createElement("td");
-var td2 = document.createElement("td");
-var td3 = document.createElement("td");    
-var row = document.createElement("tr");
+function Chart() {
+    return (
+        <div className='center'>
+            <div class='chrt'>
+            <h1>Chart 2</h1>
+    <Bar data={data} />
+  </div>
+  <label for="title">Title:</label><br></br>
+  <input type="text" id="title" name="title" value="Food"></input><br></br>
+  <label for="amount">Amount:</label><br></br>
+  <input type="text" id="amount" name="amount" value="0"></input><br></br>
+  <label for="color">Color:</label><br></br>
+  <input type="text" id="color" name="color" value="blue"></input><br></br>
+  <input type="submit" value="Submit"></input>
+  </div>
+    );
+  }
 
-td1.innerHTML = document.getElementById("item").value;
-td2.innerHTML  = document.getElementById("quantity").value;
-td3.innerHTML  = document.getElementById("price").value;
+  export default Chart;
 
-row.appendChild(td1);
-row.appendChild(td2);
-row.appendChild(td3);
-
-tableBody.appendChild(row);
-}
 
 function Chart() {
     return (
