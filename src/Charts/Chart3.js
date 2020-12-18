@@ -21,9 +21,17 @@ function Chart() {
     return (
         <div className='center'>
             <div class='chrt'>
-            <h1>Chart 3</h1>
-    <Line data={data} />
-  </div></div>
+            <h1>Chart 2</h1>
+    <Pie data={data} />
+  </div>
+  <label for="title">Title:</label><br></br>
+  <input type="text" id="title" name="title" value="Food"></input><br></br>
+  <label for="amount">Amount:</label><br></br>
+  <input type="text" id="amount" name="amount" value="0"></input><br></br>
+  <label for="color">Color:</label><br></br>
+  <input type="text" id="color" name="color" value="blue"></input><br></br>
+  <input type="submit" value="Submit"></input>
+  </div>
     );
   }
 
