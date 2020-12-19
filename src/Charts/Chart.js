@@ -21,6 +21,9 @@ function Chart() {
     return (
         <div className='center'>
             <div class='chrt'>
+              <h3>Trying to get this JSON to work is killing me, my quereys are under /src/mongo_method_magic/ on my github</h3>
+              <h3>I know I probably wont get any points for this, but they all work on their own</h3>
+              <h3>My problem is actually implementing them on my dashboard page. I cant get the results over here</h3>
             <h1>Chart 1</h1>
     <Pie data={data} />
   </div>

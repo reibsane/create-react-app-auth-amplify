@@ -7,10 +7,9 @@ import Dashboard from './Dashboard/Dashboard';
 import Chart from './Charts/Chart';
 import Chart2 from './Charts/Chart2';
 import Chart3 from './Charts/Chart3';
-import logo from './logo.svg';
 import './App.css';
 import { withAuthenticator } from 'aws-amplify-react'
-import Amplify, { Auth } from 'aws-amplify';
+import Amplify from 'aws-amplify';
 import aws_exports from './aws-exports';
 import {
   BrowserRouter as Router,
