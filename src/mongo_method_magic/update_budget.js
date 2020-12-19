@@ -8,17 +8,16 @@ mongoDBClient.connect(url, { useUnifiedTopology: true }, (opperationError, dbHan
         console.log("Connection Error :(");
     } else {
         console.log("Connected");
-        let data = {title: usr_title, amount: usr_amount, color: usr_color};
-        dbHandler.db('trial').collection('trial2').deleteOne(data, (operr)=>{
+        let newData = {$set: {title: usr_title, amount: usr_amount, color: usr_color}};
+        dbHandler.db('final_project').collection('budget').updateOne({title: usr_title}, newData, (operr, opresult)=>{
             if (operr){
-                console.log("deletion error");
+                console.log("update error");
             } else {
-                console.log("deletion Successful");
+                console.log("update Successful");
                 console.log("Goodbye");
                 dbHandler.close();
             }
         })
     }
 });
-
 

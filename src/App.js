@@ -4,6 +4,7 @@ import Hero from './Hero/Hero';
 import HomePage from './HomePage/HomePage';
 import Footer from './Footer/Footer';
 import Dashboard from './Dashboard/Dashboard';
+import Usr_input from './usr_input/usr_input';
 import Chart from './Charts/Chart';
 import Chart2 from './Charts/Chart2';
 import Chart3 from './Charts/Chart3';
@@ -32,6 +33,7 @@ class App extends Component {
         <Switch>
           <Route path="/dashboard">
             <Dashboard/>
+            <Usr_input/>
             <Chart/>
             <Chart2/>
             <Chart3/>
